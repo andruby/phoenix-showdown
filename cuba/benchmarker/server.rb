@@ -1,6 +1,7 @@
 require 'cuba'
 require 'cuba/render'
 require 'erb'
+require 'tilt/erb'
 
 Cuba.plugin Cuba::Render
 
