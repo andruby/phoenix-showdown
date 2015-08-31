@@ -15,10 +15,9 @@ defmodule Benchmarker.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_benchmarker_key",
-    signing_salt: "UU4/F5b7",
-    encryption_salt: "9R4y+niH"
+    signing_salt: "UU4/F5b7"
 
-  plug :router, Benchmarker.Router
+  plug Benchmarker.Router
 
   if code_reloading? do
     plug Phoenix.LiveReloader
